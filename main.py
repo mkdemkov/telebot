@@ -2,14 +2,14 @@ import time
 
 import telebot
 from telebot import types
-import math
+from settings import TG_TOKEN
 
 global count_yes, count_no, count_yes_no
 global chat_id
 global ind
 global ind_girl
 
-bot = telebot.TeleBot('5501458544:AAFN8ZZP5xIACExlA4wyreHD7recnuI1STE')
+bot = telebot.TeleBot(TG_TOKEN)
 
 quest = ["Есть ли у тебя друзья?", "Появляется ли на твоём лице улыбка, когда ты смотришь на мужчин?",
          "Часто ли ты засматриваешься на мужчин, когда едешь на работу/учёбу?",
